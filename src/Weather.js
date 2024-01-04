@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import NiceDate from "./NiceDate.js";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -15,6 +16,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.city,
       iconUrl: response.data.condition.icon_url,
+      date: new Date(response.data.time * 1000),
     });
   }
 
@@ -23,7 +25,9 @@ export default function Weather(props) {
       <div className="Weather">
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <NiceDate date="weatherData.date" />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <br />
