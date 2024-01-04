@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="A Coruña" />
         <footer>
           This project was coded with 🍷 by{" "}
           <a href="www.linkedin.com/in/caroline-flora-knight-48a24b118">
