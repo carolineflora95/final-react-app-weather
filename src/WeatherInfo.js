@@ -20,9 +20,24 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>✅ Feels Like: {Math.round(props.info.feelsLike)}ºC</li>
-            <li>📈Humidity: {props.info.humidity}%</li>
-            <li>˳༄꠶ Wind Speed: {Math.round(props.info.wind)}km/h</li>
+            <li>
+              <span role="img" aria-label="checkmark">
+                ✅
+              </span>{" "}
+              Feels Like: {Math.round(props.info.feelsLike)}ºC
+            </li>
+            <li>
+              <span role="img" aria-label="graph">
+                📈
+              </span>
+              Humidity: {props.info.humidity}%
+            </li>
+            <li>
+              <span role="img" aria-label="checkmark">
+                ˳༄꠶{" "}
+              </span>
+              Wind Speed: {Math.round(props.info.wind)}km/h
+            </li>
           </ul>
         </div>
       </div>

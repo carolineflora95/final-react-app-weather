@@ -32,8 +32,11 @@
   font-weight: bold;
   color: black;
 }
-.Weather .units {
+.Weather .unit {
   vertical-align: 19px;
   margin: 5px;
   font-weight: bold;
+}
+.Weather .unit a {
+  text-decoration: none;
 }
