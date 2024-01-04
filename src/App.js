@@ -9,7 +9,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="A Coruña" />
         <footer>
-          This project was coded with by{" "}
+          This project was coded with 🍷 by{" "}
           <a href="www.linkedin.com/in/caroline-flora-knight-48a24b118">
             Caroline Knight{" "}
           </a>
