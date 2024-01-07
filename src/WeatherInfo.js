@@ -30,7 +30,7 @@ export default function WeatherInfo(props) {
               <span role="img" aria-label="graph">
                 📈
               </span>
-              Humidity: {props.info.humidity}%
+              Humidity: {props.info.humidity}%n
             </li>
             <li>
               <span role="img" aria-label="checkmark">
